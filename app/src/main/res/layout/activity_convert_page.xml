@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    tools:context=".Convert_page">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/nextpge"
+            android:layout_width="254dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Switch in Convert"
+            android:textColor="#FBFBFB"
+            android:textSize="5dp"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="#0B0B0B"
+            app:neumorph_shadowColorLight="#43434D"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="flat">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calcvert Screen"
+                    android:textColor="#F8F5F5"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/Bmi_pgee"
+            android:layout_width="190dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="32dp"
+            android:clickable="true"
+
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toStartOf="@+id/set_pgee"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nextpge"
+            app:neumorph_backgroundColor="@color/primary_color"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="#0B0B0B"
+            app:neumorph_shadowColorLight="#43434D"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="basin">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:id="@+id/lottieAnimationView7"
+                    android:layout_width="166dp"
+                    android:layout_height="69dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/bmical">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Bmi"
+                    android:textColor="#F4EFEF"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView7">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/unit_pgee"
+            android:layout_width="190dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toStartOf="@+id/age_pgee"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Bmi_pgee"
+            app:neumorph_backgroundColor="@color/primary_color"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="#0B0B0B"
+            app:neumorph_shadowColorLight="#43434D"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="basin">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <pl.droidsonroids.gif.GifImageView
+
+                    android:layout_width="160dp"
+                    android:layout_height="79dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/length"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </pl.droidsonroids.gif.GifImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="Length"
+                    android:textColor="#F4EFEF"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/age_pgee"
+            android:layout_width="190dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toEndOf="@+id/unit_pgee"
+            app:layout_constraintTop_toBottomOf="@+id/Bmi_pgee"
+            app:neumorph_backgroundColor="@color/primary_color"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="#0B0B0B"
+            app:neumorph_shadowColorLight="#43434D"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="basin">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.airbnb.lottie.LottieAnimationView
+
+
+                    android:id="@+id/lottieAnimationView9"
+                    android:layout_width="166dp"
+                    android:layout_height="69dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/age">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Age"
+                    android:textColor="#F4EFEF"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView9">
+
+                </TextView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/set_pgee"
+            android:layout_width="190dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Bmi_pgee"
+            app:layout_constraintTop_toBottomOf="@+id/nextpge"
+            app:neumorph_backgroundColor="@color/primary_color"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="#0B0B0B"
+            app:neumorph_shadowColorLight="#43434D"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="basin">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.airbnb.lottie.LottieAnimationView
+
+
+                    android:id="@+id/lottieAnimationView8"
+                    android:layout_width="166dp"
+                    android:layout_height="69dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/set">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Arrange No."
+                    android:textColor="#F4EFEF"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.508"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView8">
+
+                </TextView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/currency_converter"
+            android:layout_width="190dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toStartOf="@+id/Mass_page"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/unit_pgee"
+            app:neumorph_backgroundColor="@color/primary_color"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="#0B0B0B"
+            app:neumorph_shadowColorLight="#43434D"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="basin">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottieAnimationView4"
+                    android:layout_width="166dp"
+                    android:layout_height="69dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/currency">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+                <TextView
+                    android:layout_width="84dp"
+                    android:layout_height="34dp"
+                    android:gravity="center"
+                    android:text="Currency"
+                    android:textColor="#F4EFEF"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView4">
+
+                </TextView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/Mass_page"
+            android:layout_width="190dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="5dp"
+
+            android:clickable="true"
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/currency_converter"
+            app:layout_constraintTop_toBottomOf="@+id/age_pgee"
+            app:neumorph_backgroundColor="@color/primary_color"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="#0B0B0B"
+            app:neumorph_shadowColorLight="#43434D"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="basin">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gifImageView"
+                    android:layout_width="160dp"
+                    android:layout_height="79dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/mass"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </pl.droidsonroids.gif.GifImageView>
+
+                <TextView
+                    android:layout_width="69dp"
+                    android:layout_height="28dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="Mass"
+                    android:textColor="#F4EFEF"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/Volume_page"
+            android:layout_width="190dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toStartOf="@+id/Simpleinterest_page"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currency_converter"
+            app:neumorph_backgroundColor="@color/primary_color"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="#0B0B0B"
+            app:neumorph_shadowColorLight="#43434D"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="basin">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <pl.droidsonroids.gif.GifImageView
+
+                    android:id="@+id/gifImageView2"
+                    android:layout_width="160dp"
+                    android:layout_height="79dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/volume"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </pl.droidsonroids.gif.GifImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="Volume"
+                    android:textColor="#F4EFEF"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gifImageView2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/Simpleinterest_page"
+            android:layout_width="190dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="5dp"
+
+
+            android:clickable="true"
+
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Volume_page"
+            app:layout_constraintTop_toBottomOf="@+id/Mass_page"
+            app:neumorph_backgroundColor="@color/primary_color"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="#0B0B0B"
+            app:neumorph_shadowColorLight="#43434D"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="basin">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.airbnb.lottie.LottieAnimationView
+
+
+                    android:id="@+id/lottieAnimationView10"
+                    android:layout_width="166dp"
+                    android:layout_height="69dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/interest">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Interest"
+                    android:textColor="#F4EFEF"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView10">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/Speed_page"
+            android:layout_width="190dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+
+
+            android:clickable="true"
+
+            android:gravity="center"
+
+            android:textStyle="normal|bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Temperature_page"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Volume_page"
+            app:neumorph_backgroundColor="@color/primary_color"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="#0B0B0B"
+            app:neumorph_shadowColorLight="#43434D"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="basin">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.airbnb.lottie.LottieAnimationView
+
+
+                    android:id="@+id/lottieAnimationView6"
+                    android:layout_width="166dp"
+                    android:layout_height="69dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/speed">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Speed"
+                    android:textColor="#F4EFEF"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView6">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/Temperature_page"
+            android:layout_width="190dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="5dp"
+
+
+            android:layout_marginTop="24dp"
+
+            android:layout_marginEnd="5dp"
+
+
+            android:clickable="true"
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/Speed_page"
+            app:layout_constraintTop_toBottomOf="@+id/Simpleinterest_page"
+            app:layout_constraintVertical_bias="0.0"
+            app:neumorph_backgroundColor="@color/primary_color"
+            app:neumorph_lightSource="leftTop"
+            app:neumorph_shadowColorDark="#0B0B0B"
+            app:neumorph_shadowColorLight="#43434D"
+            app:neumorph_shadowElevation="5dp"
+            app:neumorph_shapeType="basin">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:id="@+id/lottieAnimationView5"
+                    android:layout_width="166dp"
+                    android:layout_height="69dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/temp">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Temperature"
+                    android:textColor="#F4EFEF"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView5">
+
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </soup.neumorphism.NeumorphCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

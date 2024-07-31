@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E4670F"
+    tools:context=".CurrencyConverter">
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/title_length"
+        android:layout_width="260dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_backgroundColor="#E4670F"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="#E5D5F8"
+        app:neumorph_shapeType="flat">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Currency Converter"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.555">
+
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView7"
+        android:layout_width="348dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Switch in Convert"
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_length"
+        app:neumorph_backgroundColor="#E4670F"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="#E5D5F8"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="pressed">
+
+        <EditText
+
+            android:id="@+id/amountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:hint="Enter amount"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="10dp" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView8"
+        android:layout_width="350dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Switch in Convert"
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="@+id/neumorphCardView7"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView7"
+        app:neumorph_backgroundColor="#E4670F"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="#E5D5F8"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+        <Spinner
+            android:id="@+id/baseCurrencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="10dp" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView5"
+        android:layout_width="352dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Switch in Convert"
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="@+id/neumorphCardView8"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView8"
+        app:neumorph_backgroundColor="#E4670F"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="#E5D5F8"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+        <Spinner
+            android:id="@+id/targetCurrencySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="10dp" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView9"
+        android:layout_width="200dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Switch in Convert"
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="@+id/neumorphCardView5"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView5"
+        app:neumorph_backgroundColor="#E4670F"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="#E5D5F8"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+        <Button
+            android:id="@+id/convertButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Convert"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="normal|bold" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="350dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Switch in Convert"
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView9"
+        app:neumorph_backgroundColor="#E4670F"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="#E5D5F8"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Your Result"
+
+            android:textColor="@color/white"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </soup.neumorphism.NeumorphCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

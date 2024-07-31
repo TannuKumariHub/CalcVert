@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B2D1D4"
+    tools:context=".SimpleInterestActivity">
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/title_inte"
+        android:layout_width="183dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_backgroundColor="#B2D1D4"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interest"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/input_prin"
+        android:layout_width="387dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Switch in Convert"
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_inte"
+        app:neumorph_backgroundColor="#B2D1D4"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="pressed">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/principalEditText"
+                android:layout_width="328dp"
+                android:layout_height="44dp"
+                android:hint="Enter Principal"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/input_rate"
+        android:layout_width="387dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Switch in Convert"
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+        android:textStyle="normal|bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_prin"
+        app:neumorph_backgroundColor="#B2D1D4"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="pressed">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/rateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Enter Rate"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/input_time"
+        android:layout_width="387dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Switch in Convert"
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+        android:textStyle="normal|bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/input_spin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_rate"
+        app:neumorph_backgroundColor="#B2D1D4"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="pressed">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/timeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Enter Time"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/input_spin"
+        android:layout_width="387dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Switch in Convert"
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+        android:textStyle="normal|bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_time"
+        app:neumorph_backgroundColor="#B2D1D4"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="pressed">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/interestTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/calculateButton"
+        android:layout_width="160dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_spin"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/result_speed"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="36dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:neumorph_backgroundColor="#B2D1D4"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/resultTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Your Result"
+
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

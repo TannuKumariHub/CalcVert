@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black3">#222520</color>
+    <color name="black2">#272B33</color>
+    <color name="black1">#292D36</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_color">#1A1A1A</color>
+    <color name="secondary_color">#272B33</color>
+    <color name="neumo_light">#F8F9FA</color>
+    <color name="neumo_shadow">#E6E7EB</color>
+
+
+
+    <color name="yellow">#FFF700</color>
+    <color name="green">#B0FC38</color>
+    <color name="red">#D21404</color>
+</resources>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#C4C4B6"
+    android:layout_height="match_parent"
+    tools:context=".TemperatureActivity">
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/title_tem"
+        android:layout_width="183dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_backgroundColor="#C4C4B6"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/spinnerfrom_temp"
+        android:layout_width="385dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="36dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Switch in Convert"
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.653"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_tem"
+        app:neumorph_backgroundColor="#C4C4B6"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/spinnerFrom_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/input_mass"
+        android:layout_width="387dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Switch in Convert"
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerfrom_temp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerfrom_temp"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerfrom_temp"
+        app:neumorph_backgroundColor="#C4C4B6"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="pressed">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editTextValue"
+                android:layout_width="331dp"
+                android:layout_height="43dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter value"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:textColor="#F3EFEF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/spinnerto_speed"
+        android:layout_width="385dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Switch in Convert"
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+        android:textStyle="normal|bold"
+
+        app:layout_constraintEnd_toEndOf="@+id/input_mass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input_mass"
+        app:layout_constraintTop_toBottomOf="@+id/input_mass"
+        app:neumorph_backgroundColor="#C4C4B6"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Spinner
+                android:id="@+id/spinnerTo_temperature"
+                android:layout_width="358dp"
+                android:layout_height="35dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btnconvert_temperature"
+        android:layout_width="160dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="Convert"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerto_speed"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/spinnerto_speed"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerto_speed"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/result_speed"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#FBFBFB"
+        android:textSize="5dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnconvert_temperature"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/btnconvert_temperature"
+        app:layout_constraintTop_toBottomOf="@+id/btnconvert_temperature"
+        app:neumorph_backgroundColor="#C4C4B6"
+        app:neumorph_lightSource="leftTop"
+        app:neumorph_shadowColorDark="#0B0B0B"
+        app:neumorph_shadowColorLight="@color/white"
+        app:neumorph_shadowElevation="5dp"
+        app:neumorph_shapeType="flat">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textResult_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Your Result"
+
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

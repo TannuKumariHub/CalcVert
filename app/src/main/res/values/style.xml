@@ -1,0 +1,36 @@
+<resources>
+
+    <style name="CalculatorButton" parent="Widget.Neumorph.CardView">
+        <item name="android:layout_height">85dp</item>
+        <item name="android:layout_width">85dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FAFAF7</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+
+        <item name="neumorph_lightSource">leftTop</item>
+        <item name="neumorph_shadowColorDark">#0B0B0B</item>
+        <item name="neumorph_shadowColorLight">#43434D</item>
+        <item name="neumorph_shadowElevation">3dp</item>
+        <item name="neumorph_shapeType">flat</item>
+
+    </style>
+
+
+
+    <style name="CustomShapeAppearance">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">32dp</item>
+
+        <!-- Or if wants different radii depending on the corner.  <item name="neumorph_backgroundColor">#1A1A1A</item>-->
+        <item name="neumorph_cornerSizeTopLeft">16dp</item>
+        <item name="neumorph_cornerSizeTopRight">16dp</item>
+        <item name="neumorph_cornerSizeBottomLeft">16dp</item>
+        <item name="neumorph_cornerSizeBottomRight">16dp</item>
+    </style>
+</resources>
+
+
+
